@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>SOUHAIB Company</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<!-- Add Bootstrap CSS link -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<!-- Add Bootstrap JavaScript and jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <body>
-    <nav> 
-        <a href=index.html>Home</a> 
-        <a href=About.html>About</a>
-        <a href=Work.html>Work</a>
-        <a href=Resume.html>Resume</a>
-        <a href=Contact.html>Contact</a>
+    <div class="menu"> 
+        <nav> 
+            <br>
+        <a href=index.html class="bmenu">Home</a> 
+        <a href=About.html class="bmenu">About</a>
+        <a href=Work.html class="bmenu">Work</a>
+        <a href=Resume.html class="bmenu">Resume</a>
+        <a href=Contact.html class="bmenu">Contact</a>
     </nav>
-    
-    <form class="text-center">
+</div>
+    <div class="fcontact">
+
+        <form>
        
         <br><br><br><br>
-        <label for="name">name:</label><br>
-        <input type="text"  name="name"><br><br>
-        <label for="email">email:</label><br>
-        <input type="text"  name="email"><br><br>
-        <label for="message">Message:</label><br>
-        <textarea name="message" rows="4" required></textarea><br>
+        <label for="name">Name:</label>
+        <input type="text"  name="name">
+        <label for="email">Email:</label>
+        <input type="text"  name="email">
+        <label for="message">Message:</label>
+        <textarea name="message" rows="4" required></textarea>
       </form>
+
+    </div>
+   
 </body>
 <footer>
     &copy; 2023 SOUHAIB Company | 123 Main Street, City, Country | Email: info@souhaibcompany.com | Phone: 
