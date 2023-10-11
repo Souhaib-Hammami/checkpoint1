@@ -1,76 +1,97 @@
 body {
-  margin: 0; 
-  padding: 0; 
-  background-image: url("b.jpg");
+  margin: 0;
+  padding: 0;
+  background-image: url("city.png");
+  background-size: cover; /* This will make the background image cover the entire viewport */
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;
 }
+
 .menu {
-  background: rgb(2,0,36);
+  padding: 0.005%;
+  text-align: center;
   background-image: radial-gradient(ellipse, rgba(25, 136, 247, 1) 30%, rgba(241, 223, 232, 1) 98%);
-    height: 60px
-  }
-  .menu {
-    text-align: center;
-    font-family: Roboto, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-  } 
-
-.bmenu {
-text-decoration: none;
-font-family: Roboto, sans-serif;
-font-weight: 0;
-font-size: 14px;
-width: 240px ;
-color: #fff;
-background: rgb(2,146,200);
-background: linear-gradient(330deg, rgba(2,146,200,1) 22%, rgba(0,147,255,0.3394607843137255) 100%);
-padding: 10px 30px;
-border: solid #d9c39b00 2px;
-box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-border-radius: 12px 50px;
-transition : 1000ms;
-transform: translateY(0);
-display: inline;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
-border: 2px solid rgb(32, 32, 81);
 }
 
-
-
-
-
-
-
+ 
+.bmenu {
+  min-width: 5%; /* Adjusted min-width to 15% */
+  height: 2%; /* Adjusted height to 3% */
+  color: #fff;
+  padding: 1% 2%; /* Adjusted padding to percentages */
+  margin: 1%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 20%;
+  border: 1px groove rgb(1, 11, 40);
+  background-color: #3a86ff;
+ 
+}
 
 .bmenu:hover {
-  background-color: #020d30
+  border-radius: 5px;
+  padding-right: 4%; /* Adjusted padding-right to 6% */
+  padding-left: 2%; /* Adjusted padding-left to 2% */
+}
+
+.bmenu:hover:after {
+  opacity: 1;
+  right: 20%; /* Adjusted right position to 5% */
+}
+
+.bmenu:after {
+  content: "\26A1";
+  position: absolute;
+  opacity: 0;
+  font-size: 100%; /* Adjusted font size to 5% */
+  line-height: 10%; /* Adjusted line height to 100% */
+  top: 50%;
+  right: -5%;  /* Adjusted right position to -5% */
+  transition: 0.4s;
 }
 
 
 
-img{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img {
   display: block;
-  margin: 0px auto;
- }
-.text-center{
-padding: 40px;
+  margin: 0 auto;
+}
+
+.text-center {
+  padding: 5%; /* Adjusted padding to 5% */
 }
 
 label {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: block;
- text-align: center;
+  text-align: center;
   font-size: large;
-  font-weight: bold; 
-  margin-bottom: 15px; 
+  font-weight: bold;
+  margin-bottom: 2%; /* Adjusted margin-bottom to 2% */
 }
 
-.fcontact
-{
- text-align: center;
+.fcontact {
+  text-align: center;
 }
 
 footer {
@@ -81,13 +102,13 @@ footer {
   width: 100%;
   background-image: radial-gradient(ellipse, rgba(25, 136, 247, 1) 30%, rgba(241, 223, 232, 1) 98%);
   text-align: center;
-  padding: 10px;
+  padding: 0.5%; /* Adjusted padding to 2% */
 }
 
-h1,h2,h3,h4,h5,h6 {
-  margin-left: 50px;
+h1, h2, h3, h4, h5, h6 {
+  margin-left: 2%; /* Adjusted margin-left to 2% */
 }
 
-p{
- text-align: center;
+p {
+  text-align: center;
 }
